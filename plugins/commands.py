@@ -840,7 +840,9 @@ async def requests(bot, message):
                     success = True
             else:
                 if len(content) < 3:
-                    await message.reply_text("<b>You must type about your request [Minimum 3 Characters]. Requests can't be empty.</b>")
+                    button = InlineKeyboardButton(text='📝Cʜᴇᴄᴋ Fᴏʀᴍᴀᴛ📝', callback_data='rqstfrmt')
+                    keyboard = InlineKeyboardMarkup([[button]])
+                    await message.reply_text(text='<b>Pʟᴢ..Uꜱᴇ Cᴏʀʀᴇᴄᴛ Fᴏʀᴍᴀᴛ</b>', quote=True, reply_markup=keyboard)
             if len(content) < 3:
                 success = False
         except Exception as e:
@@ -875,7 +877,9 @@ async def requests(bot, message):
                     success = True
             else:
                 if len(content) < 3:
-                    await message.reply_text("<b>You must type about your request [Minimum 3 Characters]. Requests can't be empty.</b>")
+                    button = InlineKeyboardButton(text='📝Cʜᴇᴄᴋ Fᴏʀᴍᴀᴛ📝', callback_data='rqstfrmt')
+                    keyboard = InlineKeyboardMarkup([[button]])
+                    await message.reply_text(text='<b>Pʟᴢ..Uꜱᴇ Cᴏʀʀᴇᴄᴛ Fᴏʀᴍᴀᴛ</b>', quote=True, reply_markup=keyboard)
             if len(content) < 3:
                 success = False
         except Exception as e:
