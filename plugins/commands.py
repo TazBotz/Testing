@@ -930,7 +930,7 @@ async def send_msg(bot, message):
 async def deletemultiplefiles(bot, message):
     chat_type = message.chat.type
     if chat_type != enums.ChatType.PRIVATE:
-        return await message.reply_text(f"<b>Hey {message.from_user.mention}, This command won't work in groups. It only works on my PM !</b>")
+        return await message.reply_text(f"<b>Hᴇʏ {message.from_user.mention}, Tʜɪꜱ Cᴏᴍᴍᴀɴᴅ Wᴏɴ'ᴛ Wᴏʀᴋ Iɴ Gʀᴏᴜᴘꜱ. Iᴛ Oɴʟʏ Wᴏʀᴋꜱ Oɴ Mʏ PM !</b>")
     else:
         pass
     try:
@@ -943,9 +943,9 @@ async def deletemultiplefiles(bot, message):
     #await k.edit_text(f"<b>Found {total} files for your query {keyword} !\n\nFile deletion process will start in 5 seconds !</b>")
     #await asyncio.sleep(5)
     btn = [[
-       InlineKeyboardButton("Yes, Continue !", callback_data=f"killfilesdq#{keyword}")
+       InlineKeyboardButton("Yᴇꜱ, Cᴏɴᴛɪɴᴜᴇ !", callback_data=f"killfilesdq#{keyword}")
        ],[
-       InlineKeyboardButton("No, Abort operation !", callback_data="close_data")
+       InlineKeyboardButton("Nᴏ, Aʙᴏʀᴛ Oᴘᴇʀᴀᴛɪᴏɴ !", callback_data="close_data")
     ]]
     await message.reply_text(
         text=f"<b>Found {total} files for your query {keyword} !\n\nDo you want to delete?</b>",
