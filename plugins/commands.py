@@ -82,12 +82,12 @@ async def start(client, message):
             try:
                 kk, file_id = message.command[1].split("_", 1)
                 pre = 'checksubp' if kk == 'filep' else 'checksub' 
-                btn.append([InlineKeyboardButton("↻ Tʀʏ Aɢᴀɪɴ", callback_data=f"{pre}#{file_id}")])
+                btn.append([InlineKeyboardButton("🔄 Tʀʏ Aɢᴀɪɴ 🔄", callback_data=f"{pre}#{file_id}")])
             except (IndexError, ValueError):
-                btn.append([InlineKeyboardButton("↻ Tʀʏ Aɢᴀɪɴ", url=f"https://t.me/{temp.U_NAME}?start={message.command[1]}")])
+                btn.append([InlineKeyboardButton("🔄 Tʀʏ Aɢᴀɪɴ 🔄", url=f"https://t.me/{temp.U_NAME}?start={message.command[1]}")])
         await client.send_message(
             chat_id=message.from_user.id,
-            text="**You are not in our channel given below so you don't get the movie file...\n\nIf you want the movie file, click on the '🍿ᴊᴏɪɴ ᴏᴜʀ ʙᴀᴄᴋ-ᴜᴘ ᴄʜᴀɴɴᴇʟ🍿' button below and join our back-up channel, then click on the '🔄 Try Again' button below...\n\nThen you will get the movie files...**",
+            text="**Pʟᴇᴀꜱᴇ Jᴏɪɴ Mʏ Bᴀᴄᴋᴜᴘ-Cʜᴀɴɴᴇʟ \nTᴏ Uꜱᴇ Tʜɪꜱ Bᴏᴛ!\n\nJᴏɪɴ Bᴀᴄᴋᴜᴘ Cʜᴀɴɴᴇʟ Tʜᴇɴ Cʟɪᴄᴋ \nOɴ Tʀʏ Aɢᴀɪɴ Tᴏ Gᴇᴛ Yᴏᴜʀ Fɪʟᴇ!**",
             reply_markup=InlineKeyboardMarkup(btn),
             parse_mode=enums.ParseMode.MARKDOWN
             )
@@ -295,13 +295,13 @@ async def start(client, message):
             )
         )
         await asyncio.sleep(1200)
-        await k.edit("<b>Your message is successfully deleted!!!</b>")
+        await k.edit("<b>Yᴏᴜʀ Mᴇꜱꜱᴀɢᴇ ɪꜱ Sᴜᴄᴄᴇꜱꜱꜰᴜʟʟʏ Dᴇʟᴇᴛᴇᴅ!!!</b>")
         return
         
     elif data.startswith("all"):
         files = temp.GETALL.get(file_id)
         if not files:
-            return await message.reply('<b><i>No such file exist.</b></i>')
+            return await message.reply('<b><i>Nᴏ Sᴜᴄʜ Fɪʟᴇ Exɪꜱᴛ.</b></i>')
         filesarr = []
         for file in files:
             file_id = file.file_id
@@ -323,7 +323,7 @@ async def start(client, message):
                     InlineKeyboardButton("Verify", url=await get_token(client, message.from_user.id, f"https://telegram.me/{temp.U_NAME}?start="))
                 ]]
                 await message.reply_text(
-                    text="<b>You are not verified !\nKindly verify to continue !</b>",
+                    text="<b>Yᴏᴜ Aʀᴇ Nᴏᴛ Vᴇʀɪꜰɪᴇᴅ !\n\nKɪɴᴅʟʏ Vᴇʀɪꜰʏ Tᴏ Cᴏɴᴛɪɴᴜᴇ !</b>",
                     protect_content=True,
                     reply_markup=InlineKeyboardMarkup(btn)
                 )
@@ -374,7 +374,7 @@ async def start(client, message):
                 )
             )
             await asyncio.sleep(1200)
-            await k.edit("<b>Your message is successfully deleted!!!</b>")
+            await k.edit("<b>Yᴏᴜʀ Mᴇꜱꜱᴀɢᴇ ɪꜱ Sᴜᴄᴄᴇꜱꜱꜰᴜʟʟʏ Dᴇʟᴇᴛᴇᴅ!!!</b>")
             return
     user = message.from_user.id
     files_ = await get_file_details(file_id)           
