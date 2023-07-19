@@ -974,13 +974,13 @@ async def shortlink(bot, message):
     userid = message.from_user.id
     user = await bot.get_chat_member(grpid, userid)
     if user.status != enums.ChatMemberStatus.ADMINISTRATOR and user.status != enums.ChatMemberStatus.OWNER and str(userid) not in ADMINS:
-        return await message.reply_text("<b>You don't have access to use this command!\n\nAdd Me to Your Own Group as Admin and Try This Command\n\nFor More PM Me With This Command</b>")
+        return await message.reply_text("<b>Yᴏᴜ Dᴏɴ'ᴛ Hᴀᴠᴇ Aᴄᴄᴇꜱꜱ Tᴏ Uꜱᴇ Tʜɪꜱ Cᴏᴍᴍᴀɴᴅ!\n\nAᴅᴅ Mᴇ Tᴏ Yᴏᴜʀ Oᴡɴ Gʀᴏᴜᴘ Aꜱ Aᴅᴍɪɴ Aɴᴅ Tʀʏ Tʜɪꜱ Cᴏᴍᴍᴀɴᴅ\n\nFᴏʀ Mᴏʀᴇ PM Mᴇ Wɪᴛʜ Tʜɪꜱ Cᴏᴍᴍᴀɴᴅ</b>")
     else:
         pass
     try:
         command, shortlink_url, api = data.split(" ")
     except:
-        return await message.reply_text("<b>Command Incomplete :(\n\nGive me a shortener website link and api along with the command !\n\nFormat: <code>/shortlink mplaylink.com 1f1da5c9df9a58058672ac8d8134e203b03426a1</code></b>")
+        return await message.reply_text("<b>Cᴏᴍᴍᴀɴᴅ Iɴᴄᴏᴍᴘʟᴇᴛᴇ :(\n\nGɪᴠᴇ ᴍᴇ ᴀ sʜᴏʀᴛʟɪɴᴋ ᴀɴᴅ ᴀᴘɪ ᴀʟᴏɴɢ ᴡɪᴛʜ ᴛʜᴇ ᴄᴏᴍᴍᴀɴᴅ !\n\nFᴏʀᴍᴀᴛ: <code>/shortlink omegalinks.in c75fabf7a6d56f15d49fa81c4bb49c06dda52182</code></b>")
     reply = await message.reply_text("<b>Please Wait...</b>")
     shortlink_url = re.sub(r"https?://?", "", shortlink_url)
     shortlink_url = re.sub(r"[:/]", "", shortlink_url)
