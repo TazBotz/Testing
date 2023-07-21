@@ -1433,14 +1433,14 @@ async def cb_handler(client: Client, query: CallbackQuery):
     
     elif query.data == "help":
         buttons = [[
-            InlineKeyboardButton('FIʟᴛᴇʀs', callback_data='filters'),
+            InlineKeyboardButton('Aʟʟ Fɪʟᴛᴇʀs', callback_data='filters'),
             InlineKeyboardButton('Fɪʟᴇ Sᴛᴏʀᴇ', callback_data='store_file')
         ], [
             InlineKeyboardButton('Cᴏɴɴᴇᴄᴛɪᴏɴ', callback_data='coct'),
-            InlineKeyboardButton('Exᴛʀᴀ Mᴏᴅs', callback_data='extra')
+            InlineKeyboardButton('Exᴛʀᴀ Mᴏᴅ', callback_data='extra')
         ], [
-            InlineKeyboardButton('Hᴏᴍᴇ', callback_data='start'),
-            InlineKeyboardButton('Sᴛᴀᴛᴜs', callback_data='stats')
+            InlineKeyboardButton('🚪Gᴏ Bᴀᴄᴋ', callback_data='start'),
+            InlineKeyboardButton('⚙Sᴇᴛᴛɪɴɢꜱ', callback_data='sett')
         ]]
         
         reply_markup = InlineKeyboardMarkup(buttons)
@@ -1456,11 +1456,13 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )
     elif query.data == "about":
         buttons = [[
-            InlineKeyboardButton('Sᴜᴘᴘᴏʀᴛ Gʀᴏᴜᴘ', url=GRP_LNK),
-            InlineKeyboardButton('Sᴏᴜʀᴄᴇ Cᴏᴅᴇ', callback_data='source')
+            InlineKeyboardButton('🧑🏻‍💻 Oᴡɴᴇʀ', callback_data='owner_info'),
+            InlineKeyboardButton('🪩 Sᴛᴀᴛᴜꜱ', callback_data='stats')
         ],[
-            InlineKeyboardButton('Hᴏᴍᴇ', callback_data='start'),
-            InlineKeyboardButton('Cʟᴏsᴇ', callback_data='close_data')
+            InlineKeyboardButton('Rᴜʟᴇꜱ ᴀɴᴅ Dɪꜱᴄʟᴀɪᴍᴇʀ', callback_data='rls_dsc')
+        ],[
+            InlineKeyboardButton('🏠 Hᴏᴍᴇ', callback_data='start'),
+            InlineKeyboardButton('🔐 Cʟᴏꜱᴇ', callback_data='close_data')
         ]]
         await client.edit_message_media(
             query.message.chat.id, 
@@ -1470,6 +1472,43 @@ async def cb_handler(client: Client, query: CallbackQuery):
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
             text=script.ABOUT_TXT.format(temp.B_NAME),
+            reply_markup=reply_markup,
+            parse_mode=enums.ParseMode.HTML
+        )
+    elif query.data == "morchl":
+        buttons = [[
+            InlineKeyboardButton('Bᴀᴄᴋᴜᴘ', url=CHNL_LNK),
+            InlineKeyboardButton('Mᴏᴠɪᴇs', url=f'https://telegram.me/+PzQ2AIfncVcwYjI1')
+        ],[
+            InlineKeyboardButton('Mᴏᴠɪᴇ Sᴇᴀʀᴄʜ Gʀᴏᴜᴘ', url=f'https://telegram.me/+AJCnlql9y4o4MjJl')
+        ],[
+            InlineKeyboardButton('🚪 Bᴀᴄᴋ', callback_data='start'),
+            InlineKeyboardButton('🔐 Cʟᴏꜱᴇ', callback_data='close_data')
+        ]]
+        await client.edit_message_media(
+            query.message.chat.id, 
+            query.message.id, 
+            InputMediaPhoto(random.choice(PICS))
+        )
+        reply_markup = InlineKeyboardMarkup(buttons)
+        await query.message.edit_text(
+            text=script.MORCHL_TXT,
+            reply_markup=reply_markup,
+            parse_mode=enums.ParseMode.HTML
+        )
+    elif query.data == "earn_money":
+        buttons = [[
+            InlineKeyboardButton('🚪 Bᴀᴄᴋ', callback_data='start'),
+            InlineKeyboardButton('⚙ Hᴇʟᴘ', url='t.me/XKunalBot')
+        ]]
+        await client.edit_message_media(
+            query.message.chat.id, 
+            query.message.id, 
+            InputMediaPhoto(random.choice(PICS))
+        )
+        reply_markup = InlineKeyboardMarkup(buttons)
+        await query.message.edit_text(
+            text=script.EARN_MONEY_TXT,
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
         )
