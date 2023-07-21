@@ -56,8 +56,6 @@ Sᴏᴜʀᴄᴇ Cᴏᴅᴇ » <a href=https://t.me/XKunalBot>Cʟɪᴄᴋ Hᴇʀ�
 <code>[Button Text](buttonalert:ᴛʜɪꜱ ɪꜱ ᴀɴ ᴀʟᴇʀᴛ ᴍᴇꜱꜱᴀɢᴇ)</code>"""
 
     AUTOFILTER_TXT = """ʜᴇʟᴘ: <b>ᴀᴜᴛᴏ ꜰɪʟᴛᴇʀ</b>
-<b>ɴᴏᴛᴇ: Fɪʟᴇ Iɴᴅᴇx</b>
-1. ᴍᴀᴋᴇ ᴍᴇAUTOFILTER_TXT = """ʜᴇʟᴘ: <b>ᴀᴜᴛᴏ ꜰɪʟᴛᴇʀ</b>
 
 <u><b>Nᴏᴛᴇ: Fɪʟᴇ Iɴᴅᴇx</b></u>
 <b>»</b> ᴍᴀᴋᴇ ᴍᴇ ᴛʜᴇ ᴀᴅᴍɪɴ ᴏꜰ ʏᴏᴜʀ ᴄʜᴀɴɴᴇʟ ɪꜰ ɪᴛ'ꜱ ᴘʀɪᴠᴀᴛᴇ.
