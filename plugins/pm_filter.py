@@ -1419,18 +1419,16 @@ async def cb_handler(client: Client, query: CallbackQuery):
         buttons = [[
             InlineKeyboardButton('🚪 Bᴀᴄᴋ', callback_data='filters')
         ]]
-        await client.edit_message_media(
-            query.message.chat.id, 
-            query.message.id, 
-            InputMediaPhoto(random.choice(PICS))
-        )
         reply_markup = InlineKeyboardMarkup(buttons)
-        await query.message.edit_text(
-            text=script.GFILTER_TXT,
-            reply_markup=reply_markup,
-            parse_mode=enums.ParseMode.HTML
-        )
-    
+        if query.from_user.id in ADMINS:
+            await query.message.edit_text(
+                text=script.GFILTER_TXT,
+                reply_markup=reply_markup,
+                parse_mode=enums.ParseMode.HTML
+            )
+        else:
+            await query.answer("Sᴏʀʀʏ!! ᴛʜɪꜱ ᴄᴏᴍᴍᴀɴᴅ ɪꜱ ᴏɴʟʏ ꜰᴏʀ ᴍʏ Aᴅᴍɪɴꜱ⚠️", show_alert = True)
+        
     elif query.data == "help":
         buttons = [[
             InlineKeyboardButton('Aʟʟ Fɪʟᴛᴇʀs', callback_data='filters'),
