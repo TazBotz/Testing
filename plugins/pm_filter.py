@@ -1374,8 +1374,14 @@ async def cb_handler(client: Client, query: CallbackQuery):
     elif query.data == "select":
         await query.answer(text=script.SELECT, show_alert=True)
 
+    elif query.data == "minfo":
+        await query.answer(text=script.MINFO, show_alert=True)
+
     elif query.data == "sinfo":
         await query.answer(text=script.SINFO, show_alert=True)
+
+    elif query.data == "rqstfrmt":
+        await query.answer(text=script.RQSTFRMT, show_alert=True)
 
     elif query.data == "start":
         buttons = [[
