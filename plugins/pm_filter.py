@@ -281,14 +281,14 @@ async def advantage_spoll_choker(bot, query):
                 reqstr1 = query.from_user.id if query.from_user else 0
                 reqstr = await bot.get_users(reqstr1)
                 button = [[
-                   InlineKeyboardButton("📜 Rᴇǫᴜᴇꜱᴛ Hᴇʀᴇ 📜", url="https://t.me/{SUPPORT_CHAT}")
+                   InlineKeyboardButton("📜 Rᴇǫᴜᴇꜱᴛ Hᴇʀᴇ 📜", url=SUPPORT_CHAT)
                 ]]
                 if NO_RESULTS_MSG:
                     await bot.send_message(chat_id=LOG_CHANNEL, text=(script.NORSLTS.format(reqstr.id, reqstr.mention, movie)))
                 k = await query.message.edit(script.MVE_NT_FND, 
                 reply_markup=InlineKeyboardMarkup(button)
                 )
-                await asyncio.sleep(10)
+                await asyncio.sleep(30)
                 await k.delete()
 
 #languages
