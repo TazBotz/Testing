@@ -81,7 +81,7 @@ async def pm_text(bot, message):
     await message.reply_text(
          text=f"<b>Hᴇʏ {user} 😍 ,\n\nYᴏᴜ Cᴀɴ'ᴛ Gᴇᴛ Mᴏᴠɪᴇ Fʀᴏᴍ Hᴇʀᴇ\nSᴇᴀʀᴄʜ ᴏɴ Oᴜʀ <a href=https://t.me/+AJCnlql9y4o4MjJl>Mᴏᴠɪᴇ Gʀᴏᴜᴘ​</a> ᴏʀ\nCʟɪᴄᴋ ᴏɴ Bᴇʟᴏᴡ Bᴜᴛᴛᴏɴ👇</b>",
          disable_web_page_preview=True,
-         reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("🧑🏻‍💻 Sᴜᴘᴘᴏʀᴛ Gʀᴏᴜᴘ 🧑🏻‍💻", url=SUPPORT_CHAT)]])
+         reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("🧑🏻‍💻 Sᴜᴘᴘᴏʀᴛ Gʀᴏᴜᴘ 🧑🏻‍💻", url="https://t.me/+7joy3I3RJt02YmY9")]])
     )
     await bot.send_message(
         chat_id=LOG_CHANNEL,
@@ -281,7 +281,7 @@ async def advantage_spoll_choker(bot, query):
                 reqstr1 = query.from_user.id if query.from_user else 0
                 reqstr = await bot.get_users(reqstr1)
                 button = [[
-                   InlineKeyboardButton("📜 Rᴇǫᴜᴇꜱᴛ Hᴇʀᴇ 📜", url=SUPPORT_CHAT)
+                   InlineKeyboardButton("📜 Rᴇǫᴜᴇꜱᴛ Hᴇʀᴇ 📜", url="https://t.me/+7joy3I3RJt02YmY9")
                 ]]
                 if NO_RESULTS_MSG:
                     await bot.send_message(chat_id=LOG_CHANNEL, text=(script.NORSLTS.format(reqstr.id, reqstr.mention, movie)))
