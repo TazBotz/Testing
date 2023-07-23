@@ -748,7 +748,8 @@ async def settings(client, message):
         ]
 
         btn = [[
-                InlineKeyboardButton("💼 Oᴘᴇɴ Iɴ Pʀɪᴠᴀᴛᴇ Cʜᴀᴛ 💼", callback_data=f"opnsetpm#{grp_id}"),
+                InlineKeyboardButton("💼 Oᴘᴇɴ Iɴ Pʀɪᴠᴀᴛᴇ Cʜᴀᴛ 💼", callback_data=f"opnsetpm#{grp_id}")
+             ],[
                 InlineKeyboardButton("⬇ Oᴘᴇɴ Hᴇʀᴇ ⬇", callback_data=f"opnsetgrp#{grp_id}")
               ]]
 
