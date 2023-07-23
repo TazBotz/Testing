@@ -149,7 +149,7 @@ async def next_page(bot, query):
         btn.insert(0, 
             [
                 InlineKeyboardButton("Lᴀɴɢᴜᴀɢᴇ", callback_data=f"languages#{key}"),
-                InlineKeyboardButton(f'◄ 𝗦𝗘𝗟𝗘𝗖𝗧 ►', 'select'),
+                InlineKeyboardButton(f'◄ 𝚂𝙴𝙻𝙴𝙲𝚃 ►', 'select'),
                 InlineKeyboardButton("Sᴇᴀꜱᴏɴꜱ",  callback_data=f"seasons#{key}")
             ]
         )
@@ -412,7 +412,7 @@ async def filter_languages_cb_handler(client: Client, query: CallbackQuery):
             btn.insert(0, 
                 [
                     InlineKeyboardButton("Lᴀɴɢᴜᴀɢᴇ", callback_data=f"languages#{key}"),
-                    InlineKeyboardButton(f'◄ 𝗦𝗘𝗟𝗘𝗖𝗧 ►', 'select'),
+                    InlineKeyboardButton(f'◄ 𝚂𝙴𝙻𝙴𝙲𝚃 ►', 'select'),
                     InlineKeyboardButton("Sᴇᴀꜱᴏɴꜱ",  callback_data=f"seasons#{key}")
                 ]
             )
@@ -421,7 +421,7 @@ async def filter_languages_cb_handler(client: Client, query: CallbackQuery):
             btn.insert(0, 
                 [
                     InlineKeyboardButton("Lᴀɴɢᴜᴀɢᴇ", callback_data=f"languages#{key}"),
-                    InlineKeyboardButton(f'◄ 𝗦𝗘𝗟𝗘𝗖𝗧 ►', 'select'),
+                    InlineKeyboardButton(f'◄ 𝚂𝙴𝙻𝙴𝙲𝚃 ►', 'select'),
                     InlineKeyboardButton("Sᴇᴀꜱᴏɴꜱ",  callback_data=f"seasons#{key}")
                 ]
             )
@@ -431,7 +431,7 @@ async def filter_languages_cb_handler(client: Client, query: CallbackQuery):
         btn.insert(0, 
             [
                 InlineKeyboardButton("Lᴀɴɢᴜᴀɢᴇ", callback_data=f"languages#{key}"),
-                InlineKeyboardButton(f'◄ 𝗦𝗘𝗟𝗘𝗖𝗧 ►', 'select'),
+                InlineKeyboardButton(f'◄ 𝚂𝙴𝙻𝙴𝙲𝚃 ►', 'select'),
                 InlineKeyboardButton("Sᴇᴀꜱᴏɴꜱ",  callback_data=f"seasons#{key}")
             ]
         )
@@ -1961,7 +1961,7 @@ async def auto_filter(client, msg, spoll=False):
         btn.insert(0, 
             [
                 InlineKeyboardButton("Lᴀɴɢᴜᴀɢᴇ", callback_data=f"languages#{key}"),
-                InlineKeyboardButton(f'◄ 𝗦𝗘𝗟𝗘𝗖𝗧 ►', 'select'),
+                InlineKeyboardButton(f'◄ 𝚂𝙴𝙻𝙴𝙲𝚃 ►', 'select'),
                 InlineKeyboardButton("Sᴇᴀꜱᴏɴꜱ",  callback_data=f"seasons#{key}")
             ]
         )
