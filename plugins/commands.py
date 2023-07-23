@@ -845,7 +845,9 @@ async def requests(bot, message):
                 if len(content) < 3:
                     button = InlineKeyboardButton(text='📝Cʜᴇᴄᴋ Fᴏʀᴍᴀᴛ📝', callback_data='rqstfrmt')
                     keyboard = InlineKeyboardMarkup([[button]])
-                    await message.reply_text(text='<b>Pʟᴢ..Uꜱᴇ Cᴏʀʀᴇᴄᴛ Fᴏʀᴍᴀᴛ</b>', quote=True, reply_markup=keyboard)
+                    k = await message.reply_text(text='<b>Pʟᴢ..Uꜱᴇ Cᴏʀʀᴇᴄᴛ Fᴏʀᴍᴀᴛ</b>', quote=True, reply_markup=keyboard)
+                    await asyncio.sleep(30)
+                    await k.delete()
             if len(content) < 3:
                 success = False
         except Exception as e:
@@ -882,7 +884,9 @@ async def requests(bot, message):
                 if len(content) < 3:
                     button = InlineKeyboardButton(text='📝Cʜᴇᴄᴋ Fᴏʀᴍᴀᴛ📝', callback_data='rqstfrmt')
                     keyboard = InlineKeyboardMarkup([[button]])
-                    await message.reply_text(text='<b>Pʟᴢ..Uꜱᴇ Cᴏʀʀᴇᴄᴛ Fᴏʀᴍᴀᴛ</b>', quote=True, reply_markup=keyboard)
+                    k = await message.reply_text(text='<b>Pʟᴢ..Uꜱᴇ Cᴏʀʀᴇᴄᴛ Fᴏʀᴍᴀᴛ</b>', quote=True, reply_markup=keyboard)
+                    await asyncio.sleep(30)
+                    await k.delete()
             if len(content) < 3:
                 success = False
         except Exception as e:
