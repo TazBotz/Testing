@@ -89,20 +89,20 @@ async def leave_a_chat(bot, message):
         chat = chat
     try:
         buttons = [[
-            InlineKeyboardButton('Support Group', url=f'https://t.me/{SUPPORT_CHAT}'),
-            InlineKeyboardButton('Owner', url="https://t.me/TeamHMT_Bot")
+            InlineKeyboardButton('Sᴜᴘᴘᴏʀᴛ Gʀᴏᴜᴘ', url=f'https://t.me/{SUPPORT_CHAT}'),
+            InlineKeyboardButton('Bᴏᴛ Oᴡɴᴇʀ', url='t.me/XKunalBot')
         ],[
-            InlineKeyboardButton('Use Me Here', url=f'https://t.me/{SUPPORT_CHAT}')
+            InlineKeyboardButton('Uꜱᴇ Mᴇ Hᴇʀᴇ', url=GRP_LNK)
         ]]
         reply_markup=InlineKeyboardMarkup(buttons)
         await bot.send_message(
             chat_id=chat,
-            text='<b>Hello Friends, \nMy admin has told me to leave from group, so i go! If you wanna add me again contact my Support Group or My Owner</b>',
+            text='<b>Hᴇʟʟᴏ ꜰʀɪᴇɴᴅꜱ,\n\nMʏ ᴍᴀꜱᴛᴇʀ ʜᴀꜱ ᴛᴏʟᴅ ᴍᴇ ᴛᴏ\nʟᴇᴀᴠᴇ ꜰʀᴏᴍ ɢʀᴏᴜᴘ, ꜱᴏ ɪ ɢᴏ!\n\nɪꜰ ʏᴏᴜ ᴡᴀɴɴᴀ ᴀᴅᴅ ᴍᴇ ᴀɢᴀɪɴ\nᴄᴏɴᴛᴀᴄᴛ ꜱᴜᴘᴘᴏʀᴛ ɢʀᴏᴜᴘ ᴏʀ\nMʏ Oᴡɴᴇʀ.</b>',
             reply_markup=reply_markup,
         )
 
         await bot.leave_chat(chat)
-        await message.reply(f"left the chat `{chat}`")
+        await message.reply(f"𝑳𝒆𝒇𝒕 𝑭𝒓𝒐𝒎 𝑪𝒉𝒂𝒕 `{chat}`")
     except Exception as e:
         await message.reply(f'Error - {e}')
 
