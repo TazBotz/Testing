@@ -1,11 +1,11 @@
 class script(object):
     START_TXT = """<b>Hᴇʟʟᴏ {},
     
-Mʏ Nᴀᴍᴇ Is <a href=https://t.me/{}>{}</a>, I Cᴀɴ Pʀᴏᴠɪᴅᴇ Mᴏᴠɪᴇs Aɴᴅ Sᴇʀɪᴇs.
+Mʏ ɴᴀᴍᴇ ɪꜱ <a href=https://t.me/{}>{}</a>, ɪ ᴄᴀɴ ᴘʀᴏᴠɪᴅᴇ Mᴏᴠɪᴇs ᴀɴᴅ Sᴇʀɪᴇs.
 
-Jᴜsᴛ Aᴅᴅ Mᴇ Tᴏ Yᴏᴜʀ Gʀᴏᴜᴘs Aɴᴅ Eɴᴊᴏʏ 😍
+Jᴜsᴛ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘꜱ ᴀꜱ ᴀᴅᴍɪɴ ᴀɴᴅ ᴇɴᴊᴏʏ..😍
 
-Mᴀɪɴᴛᴀɪɴᴇᴅ Bʏ : <a href=https://t.me/LazyHUB>🧑🏻‍💻𐏓꯭꯭Ⱡᴀ̄͞ᴢ̄͞ʏ̄͞ 🄷🅄🄱</a></b>"""
+Mᴀɪɴᴛᴀɪɴᴇᴅ Bʏ: <a href=https://t.me/LazyHUB>🧑🏻‍💻𐏓꯭꯭Ⱡᴀ̄͞ᴢ̄͞ʏ̄͞ 🄷🅄🄱</a></b>"""
 
     HELP_TXT = """<b>Hᴇʏ {}
     
