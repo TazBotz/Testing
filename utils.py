@@ -682,3 +682,61 @@ async def send_all(bot, userid, files, ident, chat_id, user_name, query):
     except Exception as e:
         await query.answer('Hᴇʏ, Sᴛᴀʀᴛ Bᴏᴛ Fɪʀsᴛ Aɴᴅ Cʟɪᴄᴋ Sᴇɴᴅ Aʟʟ', show_alert=True)
         
+async def get_cap(settings, remaining_seconds, files, query, total_results, search):
+    # Aᴅᴅᴇᴅ Bʏ @TᴇᴀᴍHMT_Bᴏᴛs
+    if settings["imdb"]:
+        IMDB_CAP = temp.IMDB_CAP.get(query.from_user.id)
+        if IMDB_CAP:
+            cap = IMDB_CAP
+            cap+="<b>\n\n<u>📚 Requested Files 👇</u></b>\n\n"
+            for file in files:
+                cap += f"<b>📁 <a href='https://telegram.me/{temp.U_NAME}?start=files_{file.file_id}'>[{get_size(file.file_size)}] {' '.join(filter(lambda x: not x.startswith('[') and not x.startswith('@') and not x.startswith('www.'), file.file_name.split()))}\n\n</a></b>"
+        else:
+            imdb = await get_poster(search, file=(files[0]).file_name) if settings["imdb"] else None
+            if imdb:
+                TEMPLATE = script.IMDB_TEMPLATE_TXT
+                cap = TEMPLATE.format(
+                    qurey=search,
+                    title=imdb['title'],
+                    votes=imdb['votes'],
+                    aka=imdb["aka"],
+                    seasons=imdb["seasons"],
+                    box_office=imdb['box_office'],
+                    localized_title=imdb['localized_title'],
+                    kind=imdb['kind'],
+                    imdb_id=imdb["imdb_id"],
+                    cast=imdb["cast"],
+                    runtime=imdb["runtime"],
+                    countries=imdb["countries"],
+                    certificates=imdb["certificates"],
+                    languages=imdb["languages"],
+                    director=imdb["director"],
+                    writer=imdb["writer"],
+                    producer=imdb["producer"],
+                    composer=imdb["composer"],
+                    cinematographer=imdb["cinematographer"],
+                    music_team=imdb["music_team"],
+                    distributors=imdb["distributors"],
+                    release_date=imdb['release_date'],
+                    year=imdb['year'],
+                    genres=imdb['genres'],
+                    poster=imdb['poster'],
+                    plot=imdb['plot'],
+                    rating=imdb['rating'],
+                    url=imdb['url'],
+                    **locals()
+                )
+                cap+="<b>\n\n<u>📚 Requested Files 👇</u></b>\n\n"
+                for file in files:
+                    cap += f"<b>📁 <a href='https://telegram.me/{temp.U_NAME}?start=files_{file.file_id}'>[{get_size(file.file_size)}] {' '.join(filter(lambda x: not x.startswith('[') and not x.startswith('@') and not x.startswith('www.'), file.file_name.split()))}\n\n</a></b>"
+            else:
+                cap = f"<b>Hᴇʏ {query.from_user.mention}, Fᴏᴜɴᴅ {total_results} Rᴇsᴜʟᴛs ғᴏʀ Yᴏᴜʀ Qᴜᴇʀʏ {search}\n\n</b>"
+                cap+="<b><u>📚 Requested Files 👇</u></b>\n\n"
+                for file in files:
+                    cap += f"<b>📁 <a href='https://telegram.me/{temp.U_NAME}?start=files_{file.file_id}'>[{get_size(file.file_size)}] {' '.join(filter(lambda x: not x.startswith('[') and not x.startswith('@') and not x.startswith('www.'), file.file_name.split()))}\n\n</a></b>"
+    else:
+        cap = f"<b>Hᴇʏ {query.from_user.mention}, Fᴏᴜɴᴅ {total_results} Rᴇsᴜʟᴛs ғᴏʀ Yᴏᴜʀ Qᴜᴇʀʏ {search}\n\n</b>"
+        cap+="<b><u>📚 Requested Files 👇</u></b>\n\n"
+        for file in files:
+            cap += f"<b>📁 <a href='https://telegram.me/{temp.U_NAME}?start=files_{file.file_id}'>[{get_size(file.file_size)}] {' '.join(filter(lambda x: not x.startswith('[') and not x.startswith('@') and not x.startswith('www.'), file.file_name.split()))}\n\n</a></b>"
+    return cap
