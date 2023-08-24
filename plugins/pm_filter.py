@@ -67,7 +67,7 @@ async def give_filter(client, message):
             return
         else:
             return await message.reply_text(
-                f"<b>Hᴇʏ {message.from_user.mention}, \n\n{str(total_results)}  Rᴇsᴜʟᴛs Aʀᴇ Aʟʀᴇᴀᴅʏ Aᴠᴀɪʟᴀʙʟᴇ Fᴏʀ {search}.\n\nTʜɪs Is A Sᴜᴘᴘᴏʀᴛ Gʀᴏᴜᴘ\nSᴏ I Cᴀɴ'ᴛ Gɪᴠᴇ Fɪʟᴇ Hᴇʀᴇ.\n\nPʟᴇᴀꜱᴇ Sᴇᴀʀᴄʜ Iᴛ Oɴ Oᴜʀ\nMᴏᴠɪᴇ Gʀᴏᴜᴘ.👇</b>",
+                f"<b>Hᴇʏ {message.from_user.mention}, \n\n{str(total_results)} Rᴇsᴜʟᴛs Aʀᴇ Aʟʀᴇᴀᴅʏ Aᴠᴀɪʟᴀʙʟᴇ Fᴏʀ {search}.\n\nTʜɪs Is A Sᴜᴘᴘᴏʀᴛ Gʀᴏᴜᴘ\nSᴏ I Cᴀɴ'ᴛ Gɪᴠᴇ Fɪʟᴇ Hᴇʀᴇ.\n\nPʟᴇᴀꜱᴇ Sᴇᴀʀᴄʜ Iᴛ Oɴ Oᴜʀ\nMᴏᴠɪᴇ Gʀᴏᴜᴘ.👇</b>",
                 disable_web_page_preview=True,
                 reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton(text='🔍Sᴇᴀʀᴄʜ Hᴇʀᴇ🔍', url=GRP_LNK)]])
             )
