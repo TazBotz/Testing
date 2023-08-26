@@ -8,6 +8,7 @@ from utils import get_size, temp, get_settings
 from Script import script
 from pyrogram.errors import ChatAdminRequired
 import asyncio 
+import random
 
 """-----------------------------------------https://t.me/GetTGLink/4179 --------------------------------------"""
 
