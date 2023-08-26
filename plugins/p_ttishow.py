@@ -44,8 +44,9 @@ async def save_group(bot, message):
                     InlineKeyboardButton("Bᴏᴛ Oᴡɴᴇʀ", url="t.me/XKunalBot")
                   ]]
         reply_markup=InlineKeyboardMarkup(buttons)
-        await message.reply_text(
-            text=f"<b>Tʜᴀɴᴋʏᴏᴜ ꜰᴏʀ Aᴅᴅɪɴɢ ᴍᴇ\nɪɴ {message.chat.title} ❣️\n\nɪꜰ ʏᴏᴜ ʜᴀᴠᴇ ᴀɴʏ ǫᴜᴇꜱᴛɪᴏɴ\n&  ᴅᴏᴜʙᴛ ᴀʙᴏᴜᴛ ᴜꜱɪɴɢ ᴍᴇ\nᴄᴏɴᴛᴀᴄᴛ ꜱᴜᴘᴘᴏʀᴛ.</b>",
+        await message.reply_photo(
+            photo=
+            caption=f"<b>Tʜᴀɴᴋʏᴏᴜ ꜰᴏʀ Aᴅᴅɪɴɢ ᴍᴇ\nɪɴ {message.chat.title} ❣️\n\nᴅᴏɴ'ᴛ ꜰᴏʀɢᴇᴛ ᴛᴏ ᴍᴀᴋᴇ ᴍᴇ\nᴀᴅᴍɪɴ ᴡɪᴛʜ ꜰᴜʟʟ ʀɪɢʜᴛꜱ\n\nɪꜰ ʏᴏᴜ ʜᴀᴠᴇ ᴀɴʏ ǫᴜᴇꜱᴛɪᴏɴ\n&  ᴅᴏᴜʙᴛ ᴀʙᴏᴜᴛ ᴜꜱɪɴɢ ᴍᴇ\nᴄᴏɴᴛᴀᴄᴛ ꜱᴜᴘᴘᴏʀᴛ.</b>",
             reply_markup=reply_markup)
     else:
         settings = await get_settings(message.chat.id)
