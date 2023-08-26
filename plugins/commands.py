@@ -1080,7 +1080,7 @@ async def settutorial(bot, message):
     else:
         pass
     if len(message.command) == 1:
-        return await message.reply("<b>Command Incomplete...) 😌\n\nGive me a tutorial link along with this command\n\nExample👇\n\n<code>/set_tutorial https://example.com</code>\n\n━━━━━━━━━━━━━━━━━━\nAny Help👉 @XKunalBot 🧑🏻‍💻</b>")
+        return await message.reply("<b>Cᴏᴍᴍᴀɴᴅ Iɴᴄᴏᴍᴘʟᴇᴛᴇ : ( 😌 )\n\nɢɪᴠᴇ ᴍᴇ ᴛᴜᴛᴏʀɪᴀʟ ʟɪɴᴋ ᴀʟᴏɴɢ ᴡɪᴛʜ ᴛʜɪꜱ ᴄᴏᴍᴍᴀɴᴅ !\n\nExᴀᴍᴘʟᴇ👇\n\n<code>/set_tutorial https://example.com</code>\n\n━━━━━━━━━━━━━━━━━━\nAɴʏ Hᴇʟᴘ👉 @XKunalBot 🧑🏻‍💻</b>")
     elif len(message.command) == 2:
         reply = await message.reply_text("<b>Please Wait...</b>")
         tutorial = message.command[1]
