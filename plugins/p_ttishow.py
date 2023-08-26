@@ -45,7 +45,7 @@ async def save_group(bot, message):
                   ]]
         reply_markup=InlineKeyboardMarkup(buttons)
         await message.reply_photo(
-            photo=
+            photo=random.choice(PICS),
             caption=f"<b>Tʜᴀɴᴋʏᴏᴜ ꜰᴏʀ Aᴅᴅɪɴɢ ᴍᴇ\nɪɴ {message.chat.title} ❣️\n\nᴅᴏɴ'ᴛ ꜰᴏʀɢᴇᴛ ᴛᴏ ᴍᴀᴋᴇ ᴍᴇ\nᴀᴅᴍɪɴ ᴡɪᴛʜ ꜰᴜʟʟ ʀɪɢʜᴛꜱ\n\nɪꜰ ʏᴏᴜ ʜᴀᴠᴇ ᴀɴʏ ǫᴜᴇꜱᴛɪᴏɴ\n&  ᴅᴏᴜʙᴛ ᴀʙᴏᴜᴛ ᴜꜱɪɴɢ ᴍᴇ\nᴄᴏɴᴛᴀᴄᴛ ꜱᴜᴘᴘᴏʀᴛ.</b>",
             reply_markup=reply_markup)
     else:
