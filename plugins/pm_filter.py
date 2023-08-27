@@ -1406,7 +1406,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
     elif query.data == "earn_money":
         buttons = [[
             InlineKeyboardButton('🚪 Bᴀᴄᴋ', callback_data='start'),
-            InlineKeyboardButton('⚙ Hᴇʟᴘ', url='t.me/XKunalBot')
+            InlineKeyboardButton('⚙ Hᴇʟᴘ', url='t.me/LazyPrince_Bot')
         ]]
         await client.edit_message_media(
             query.message.chat.id, 
