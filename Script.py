@@ -130,7 +130,7 @@ Pᴇʀᴍᴀɴᴇɴᴛ ʟɪɴᴋ:- <a href='https://t.me/LazyPrince_Bot'>𐏓꯭
 <b>✯ Uꜱᴇᴅ Sᴛᴏʀᴀɢᴇ:</b> <code>{}</code>
 <b>✯ Fʀᴇᴇ Sᴛᴏʀᴀɢᴇ:</b> <code>{}</code>
 
-<b><a href=https://t.me/LazyPrince_Bot>🧑🏻‍💻 Mᴀɪɴᴛᴀɪɴᴇᴅ Bʏ 𐏓꯭꯭Ⱡᴀ̄͞ᴢ̄͞ʏ̄͞ P̸̲͟ʀ̲̄͟͞ɪ̲̄͟͞ɴ̲̄͟͞ᴄ̲̄͟͞ᴇ̲̄͟͞𐏓</a></b>"""
+<b>🧑🏻‍💻Mᴀɪɴᴛᴀɪɴᴇᴅ Bʏ: <a href=https://t.me/LazyPrince_Bot>𐏓꯭꯭Ⱡᴀ̄͞ᴢ̄͞ʏ̄͞ P̸̲͟ʀ̲̄͟͞ɪ̲̄͟͞ɴ̲̄͟͞ᴄ̲̄͟͞ᴇ̲̄͟͞𐏓</a></b>"""
 
     RLS_DSC = """<u><b>Rᴜʟᴇꜱ Aɴᴅ Dɪꜱᴄʟᴀɪᴍᴇʀ Mᴏᴅᴜʟᴇ</b></u>
     
