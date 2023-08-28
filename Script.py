@@ -317,7 +317,7 @@ Sᴇʀɪᴇꜱ Rᴇǫᴜᴇsᴛ Fᴏʀᴍᴀᴛ
 
 Sᴛᴇᴘ 1➻ ᴀᴅᴅ ʙᴏᴛ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ᴡɪᴛʜ ᴀʟʟ ʀɪɢʜᴛꜱ.
 
-Sᴛᴇᴘ 2➻ ᴍᴀᴋᴇ ᴀ ᴀᴄᴄᴏᴜɴᴛ ᴏɴ ᴀɴʏ <a href='https://onepagelink.in/ref/LazyHUB'>ꜱᴏʀᴛɴᴇʀ ᴡᴇʙꜱɪᴛᴇ</a>.
+Sᴛᴇᴘ 2➻ ᴍᴀᴋᴇ ᴀɴ ᴀᴄᴄᴏᴜɴᴛ ᴏɴ ᴀɴʏ <a href='https://onepagelink.in/ref/LazyHUB'>ꜱᴏʀᴛɴᴇʀ ᴡᴇʙꜱɪᴛᴇ</a>.
 
 Sᴛᴇᴘ 3➻ ᴄᴏᴘʏ ʏᴏᴜʀ <a href='https://onepagelink.in/member/tools/api'>ᴀᴘɪ ᴛᴏᴋᴇɴ</a> ꜰʀᴏᴍ ʟɪɴᴋ ꜱᴏʀᴛɴᴇʀ ᴡᴇʙꜱɪᴛᴇ ᴅᴀꜱʜʙᴏᴀʀᴅ.
 
