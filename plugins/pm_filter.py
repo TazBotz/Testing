@@ -128,37 +128,23 @@ async def next_page(bot, query):
             for file in files
         ]
 
-        btn.insert(0, 
-            [
-                InlineKeyboardButton("Lᴀɴɢᴜᴀɢᴇ", callback_data=f"languages#{key}"),
-                InlineKeyboardButton(f'◄ ꜱᴇʟᴇᴄᴛ ►', 'select'),
-                InlineKeyboardButton("Sᴇᴀꜱᴏɴꜱ",  callback_data=f"seasons#{key}")
-            ]
-        )
         btn.insert(0, [
             InlineKeyboardButton("! Sᴇɴᴅ Aʟʟ Tᴏ PM !", callback_data=f"sendfiles#{key}"),
-            InlineKeyboardButton("! Gᴇᴛ Dɪʀᴇᴄᴛ Fɪʟᴇ !", url=f"https://telegram.me/{temp.U_NAME}")
+            InlineKeyboardButton("! Pɪᴄᴋ Lᴀɴɢᴜᴀɢᴇ !", callback_data=f"languages#{key}")
         ])
 
         btn.insert(0, [
-        InlineKeyboardButton("⚡ Cʜᴇᴄᴋ Bᴏᴛ PM ⚡", url=f"https://t.me/{temp.U_NAME}")
+        InlineKeyboardButton("⚡ Gᴇᴛ Dɪʀᴇᴄᴛ Fɪʟᴇ ⚡", url=f"https://t.me/{temp.U_NAME}")
         ])
     else:
         btn = []
-        btn.insert(0, 
-            [
-                InlineKeyboardButton("Lᴀɴɢᴜᴀɢᴇ", callback_data=f"languages#{key}"),
-                InlineKeyboardButton(f'◄ ꜱᴇʟᴇᴄᴛ ►', 'select'),
-                InlineKeyboardButton("Sᴇᴀꜱᴏɴꜱ",  callback_data=f"seasons#{key}")
-            ]
-        )
         btn.insert(0, [
             InlineKeyboardButton("! Sᴇɴᴅ Aʟʟ Tᴏ PM !", callback_data=f"sendfiles#{key}"),
-            InlineKeyboardButton("! Gᴇᴛ Dɪʀᴇᴄᴛ Fɪʟᴇ !", url=f"https://telegram.me/{temp.U_NAME}")
+            InlineKeyboardButton("! Pɪᴄᴋ Lᴀɴɢᴜᴀɢᴇ !", callback_data=f"languages#{key}")
         ])
 
         btn.insert(0, [
-        InlineKeyboardButton("⚡ Cʜᴇᴄᴋ Bᴏᴛ PM ⚡", url=f"https://t.me/{temp.U_NAME}")
+        InlineKeyboardButton("⚡ Gᴇᴛ Dɪʀᴇᴄᴛ Fɪʟᴇ ⚡", url=f"https://t.me/{temp.U_NAME}")
         ])
     try:
         if settings['max_btn']:
@@ -317,7 +303,7 @@ async def languages_cb_handler(client: Client, query: CallbackQuery):
         0,
         [
             InlineKeyboardButton(
-                text="👇 𝖲𝖾𝗅𝖾𝖼𝗍 𝖸𝗈𝗎𝗋 𝖫𝖺𝗇𝗀𝗎𝖺𝗀𝖾𝗌 👇", callback_data="ident"
+                text="👇 Sᴇʟᴇᴄᴛ Yᴏᴜʀ Lᴀɴɢᴜᴀɢᴇ 👇", callback_data="ident"
             )
         ],
     )
@@ -370,37 +356,23 @@ async def filter_languages_cb_handler(client: Client, query: CallbackQuery):
             ]
             for file in files
         ]
-        btn.insert(0, 
-            [
-                InlineKeyboardButton("Lᴀɴɢᴜᴀɢᴇ", callback_data=f"languages#{key}"),
-                InlineKeyboardButton(f'◄ ꜱᴇʟᴇᴄᴛ ►', 'select'),
-                InlineKeyboardButton("Sᴇᴀꜱᴏɴꜱ",  callback_data=f"seasons#{key}")
-            ]
-        )
         btn.insert(0, [
             InlineKeyboardButton("! Sᴇɴᴅ Aʟʟ Tᴏ PM !", callback_data=f"sendfiles#{key}"),
-            InlineKeyboardButton("! Gᴇᴛ Dɪʀᴇᴄᴛ Fɪʟᴇ !", url=f"https://telegram.me/{temp.U_NAME}")
+            InlineKeyboardButton("! Pɪᴄᴋ Lᴀɴɢᴜᴀɢᴇ !", callback_data=f"languages#{key}")
         ])
 
         btn.insert(0, [
-        InlineKeyboardButton("⚡ Cʜᴇᴄᴋ Bᴏᴛ PM ⚡", url=f"https://t.me/{temp.U_NAME}")
+        InlineKeyboardButton("⚡ Gᴇᴛ Dɪʀᴇᴄᴛ Fɪʟᴇ ⚡", url=f"https://t.me/{temp.U_NAME}")
         ])
     else:
         btn = []
-        btn.insert(0, 
-            [
-                InlineKeyboardButton("Lᴀɴɢᴜᴀɢᴇ", callback_data=f"languages#{key}"),
-                InlineKeyboardButton(f'◄ ꜱᴇʟᴇᴄᴛ ►', 'select'),
-                InlineKeyboardButton("Sᴇᴀꜱᴏɴꜱ",  callback_data=f"seasons#{key}")
-            ]
-        )
         btn.insert(0, [
             InlineKeyboardButton("! Sᴇɴᴅ Aʟʟ Tᴏ PM !", callback_data=f"sendfiles#{key}"),
-            InlineKeyboardButton("! Gᴇᴛ Dɪʀᴇᴄᴛ Fɪʟᴇ !", url=f"https://telegram.me/{temp.U_NAME}")
+            InlineKeyboardButton("! Pɪᴄᴋ Lᴀɴɢᴜᴀɢᴇ !", callback_data=f"languages#{key}")
         ])
 
         btn.insert(0, [
-        InlineKeyboardButton("⚡ Cʜᴇᴄᴋ Bᴏᴛ PM ⚡", url=f"https://t.me/{temp.U_NAME}")
+        InlineKeyboardButton("⚡ Gᴇᴛ Dɪʀᴇᴄᴛ Fɪʟᴇ ⚡", url=f"https://t.me/{temp.U_NAME}")
         ])
     if offset != "":
         try:
@@ -568,20 +540,13 @@ async def filter_seasons_cb_handler(client: Client, query: CallbackQuery):
         ])
     else:
         btn = []
-        btn.insert(0, 
-            [
-                InlineKeyboardButton("Lᴀɴɢᴜᴀɢᴇ", callback_data=f"languages#{key}"),
-                InlineKeyboardButton(f'◄ ꜱᴇʟᴇᴄᴛ ►', 'select'),
-                InlineKeyboardButton("Sᴇᴀꜱᴏɴꜱ",  callback_data=f"seasons#{key}")
-            ]
-        )
         btn.insert(0, [
             InlineKeyboardButton("! Sᴇɴᴅ Aʟʟ Tᴏ PM !", callback_data=f"sendfiles#{key}"),
-            InlineKeyboardButton("! Gᴇᴛ Dɪʀᴇᴄᴛ Fɪʟᴇ !", url=f"https://telegram.me/{temp.U_NAME}")
+            InlineKeyboardButton("! Pɪᴄᴋ Lᴀɴɢᴜᴀɢᴇ !", callback_data=f"languages#{key}")
         ])
 
         btn.insert(0, [
-        InlineKeyboardButton("⚡ Cʜᴇᴄᴋ Bᴏᴛ PM ⚡", url=f"https://t.me/{temp.U_NAME}")
+        InlineKeyboardButton("⚡ Gᴇᴛ Dɪʀᴇᴄᴛ Fɪʟᴇ ⚡", url=f"https://t.me/{temp.U_NAME}")
         ])
         
     offset = 0
@@ -1716,7 +1681,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                                          callback_data=f'setgs#file_secure#{settings["file_secure"]}#{str(grp_id)}')
                 ],
                 [
-                    InlineKeyboardButton('Iᴍᴅʙ', callback_data=f'setgs#imdb#{settings["imdb"]}#{str(grp_id)}'),
+                    InlineKeyboardButton('Iᴍᴅʙ Mᴏᴅᴇ', callback_data=f'setgs#imdb#{settings["imdb"]}#{str(grp_id)}'),
                     InlineKeyboardButton('✔ Oɴ' if settings["imdb"] else '✘ Oғғ',
                                          callback_data=f'setgs#imdb#{settings["imdb"]}#{str(grp_id)}')
                 ],
@@ -1819,37 +1784,23 @@ async def auto_filter(client, msg, spoll=False):
             ]
             for file in files
         ]
-        btn.insert(0, 
-            [
-                InlineKeyboardButton("Lᴀɴɢᴜᴀɢᴇ", callback_data=f"languages#{key}"),
-                InlineKeyboardButton(f'◄ ꜱᴇʟᴇᴄᴛ ►', 'select'),
-                InlineKeyboardButton("Sᴇᴀꜱᴏɴꜱ",  callback_data=f"seasons#{key}")
-            ]
-        )
         btn.insert(0, [
             InlineKeyboardButton("! Sᴇɴᴅ Aʟʟ Tᴏ PM !", callback_data=f"sendfiles#{key}"),
-            InlineKeyboardButton("! Gᴇᴛ Dɪʀᴇᴄᴛ Fɪʟᴇ !", url=f"https://telegram.me/{temp.U_NAME}")
+            InlineKeyboardButton("! Pɪᴄᴋ Lᴀɴɢᴜᴀɢᴇ !", callback_data=f"languages#{key}")
         ])
 
         btn.insert(0, [
-        InlineKeyboardButton("⚡ Cʜᴇᴄᴋ Bᴏᴛ PM ⚡", url=f"https://t.me/{temp.U_NAME}")
+        InlineKeyboardButton("⚡ Gᴇᴛ Dɪʀᴇᴄᴛ Fɪʟᴇ ⚡", url=f"https://t.me/{temp.U_NAME}")
         ])
     else:
         btn = []
-        btn.insert(0, 
-            [
-                InlineKeyboardButton("Lᴀɴɢᴜᴀɢᴇ", callback_data=f"languages#{key}"),
-                InlineKeyboardButton(f'◄ ꜱᴇʟᴇᴄᴛ ►', 'select'),
-                InlineKeyboardButton("Sᴇᴀꜱᴏɴꜱ",  callback_data=f"seasons#{key}")
-            ]
-        )
         btn.insert(0, [
             InlineKeyboardButton("! Sᴇɴᴅ Aʟʟ Tᴏ PM !", callback_data=f"sendfiles#{key}"),
-            InlineKeyboardButton("! Gᴇᴛ Dɪʀᴇᴄᴛ Fɪʟᴇ !", url=f"https://telegram.me/{temp.U_NAME}")
+            InlineKeyboardButton("! Pɪᴄᴋ Lᴀɴɢᴜᴀɢᴇ !", callback_data=f"languages#{key}")
         ])
 
         btn.insert(0, [
-        InlineKeyboardButton("⚡ Cʜᴇᴄᴋ Bᴏᴛ PM ⚡", url=f"https://t.me/{temp.U_NAME}")
+        InlineKeyboardButton("⚡ Gᴇᴛ Dɪʀᴇᴄᴛ Fɪʟᴇ ⚡", url=f"https://t.me/{temp.U_NAME}")
         ])
     if offset != "":
         req = message.from_user.id if message.from_user else 0
