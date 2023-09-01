@@ -134,7 +134,7 @@ async def next_page(bot, query):
         ])
 
         btn.insert(0, [
-        InlineKeyboardButton("⚡ Gᴇᴛ Dɪʀᴇᴄᴛ Fɪʟᴇ ⚡", url=f"https://t.me/{temp.U_NAME}")
+        InlineKeyboardButton("⚡ Gᴇᴛ Dɪʀᴇᴄᴛ Fɪʟᴇ ⚡", url=f"https://t.me/LazyHUB/95")
         ])
     else:
         btn = []
@@ -144,7 +144,7 @@ async def next_page(bot, query):
         ])
 
         btn.insert(0, [
-        InlineKeyboardButton("⚡ Gᴇᴛ Dɪʀᴇᴄᴛ Fɪʟᴇ ⚡", url=f"https://t.me/{temp.U_NAME}")
+        InlineKeyboardButton("⚡ Gᴇᴛ Dɪʀᴇᴄᴛ Fɪʟᴇ ⚡", url=f"https://t.me/LazyHUB/95")
         ])
     try:
         if settings['max_btn']:
@@ -273,7 +273,7 @@ async def languages_cb_handler(client: Client, query: CallbackQuery):
     try:
         if int(query.from_user.id) not in [query.message.reply_to_message.from_user.id, 0]:
             return await query.answer(
-                f"⚠️ ʜᴇʟʟᴏ{query.from_user.first_name},\nᴛʜɪꜱ ɪꜱ ɴᴏᴛ ʏᴏᴜʀ ᴍᴏᴠɪᴇ ʀᴇQᴜᴇꜱᴛ,\nʀᴇQᴜᴇꜱᴛ ʏᴏᴜʀ'ꜱ...",
+                f"⚠️ Hᴇʟʟᴏ {query.from_user.first_name},\nᴛʜɪꜱ ɪꜱ ɴᴏᴛ ʏᴏᴜʀ ᴍᴏᴠɪᴇ ʀᴇᴏ̨ᴜᴇꜱᴛ,\nʀᴇᴏ̨ᴜᴇꜱᴛ ʏᴏᴜʀ'ꜱ...",
                 show_alert=True,
             )
     except:
@@ -309,7 +309,7 @@ async def languages_cb_handler(client: Client, query: CallbackQuery):
     )
     req = query.from_user.id
     offset = 0
-    btn.append([InlineKeyboardButton(text="↭ ʙᴀᴄᴋ ᴛᴏ ꜰɪʟᴇs ​↭", callback_data=f"fl#homepage#{key}")])
+    btn.append([InlineKeyboardButton(text="↭ Bᴀᴄᴋ Tᴏ Fɪʟᴇs ​↭", callback_data=f"fl#homepage#{key}")])
 
     await query.edit_message_reply_markup(InlineKeyboardMarkup(btn))
     
@@ -331,7 +331,7 @@ async def filter_languages_cb_handler(client: Client, query: CallbackQuery):
     try:
         if int(req) not in [query.message.reply_to_message.from_user.id, 0]:
             return await query.answer(
-                f"⚠️ ʜᴇʟʟᴏ{query.from_user.first_name},\nᴛʜɪꜱ ɪꜱ ɴᴏᴛ ʏᴏᴜʀ ᴍᴏᴠɪᴇ ʀᴇQᴜᴇꜱᴛ,\nʀᴇQᴜᴇꜱᴛ ʏᴏᴜʀ'ꜱ...",
+                f"⚠️ Hᴇʟʟᴏ {query.from_user.first_name},\nᴛʜɪꜱ ɪꜱ ɴᴏᴛ ʏᴏᴜʀ ᴍᴏᴠɪᴇ ʀᴇᴏ̨ᴜᴇꜱᴛ,\nʀᴇᴏ̨ᴜᴇꜱᴛ ʏᴏᴜʀ'ꜱ...",
                 show_alert=True,
             )
     except:
@@ -362,7 +362,7 @@ async def filter_languages_cb_handler(client: Client, query: CallbackQuery):
         ])
 
         btn.insert(0, [
-        InlineKeyboardButton("⚡ Gᴇᴛ Dɪʀᴇᴄᴛ Fɪʟᴇ ⚡", url=f"https://t.me/{temp.U_NAME}")
+        InlineKeyboardButton("⚡ Gᴇᴛ Dɪʀᴇᴄᴛ Fɪʟᴇ ⚡", url=f"https://t.me/LazyHUB/95")
         ])
     else:
         btn = []
@@ -372,7 +372,7 @@ async def filter_languages_cb_handler(client: Client, query: CallbackQuery):
         ])
 
         btn.insert(0, [
-        InlineKeyboardButton("⚡ Gᴇᴛ Dɪʀᴇᴄᴛ Fɪʟᴇ ⚡", url=f"https://t.me/{temp.U_NAME}")
+        InlineKeyboardButton("⚡ Gᴇᴛ Dɪʀᴇᴄᴛ Fɪʟᴇ ⚡", url=f"https://t.me/LazyHUB/95")
         ])
     if offset != "":
         try:
@@ -420,7 +420,7 @@ async def seasons_cb_handler(client: Client, query: CallbackQuery):
     try:
         if int(query.from_user.id) not in [query.message.reply_to_message.from_user.id, 0]:
             return await query.answer(
-                f"⚠️ ʜᴇʟʟᴏ{query.from_user.first_name},\nᴛʜɪꜱ ɪꜱ ɴᴏᴛ ʏᴏᴜʀ ᴍᴏᴠɪᴇ ʀᴇQᴜᴇꜱᴛ,\nʀᴇQᴜᴇꜱᴛ ʏᴏᴜʀ'ꜱ...",
+                f"⚠️ Hᴇʟʟᴏ {query.from_user.first_name},\nᴛʜɪꜱ ɪꜱ ɴᴏᴛ ʏᴏᴜʀ ᴍᴏᴠɪᴇ ʀᴇᴏ̨ᴜᴇꜱᴛ,\nʀᴇᴏ̨ᴜᴇꜱᴛ ʏᴏᴜʀ'ꜱ...",
                 show_alert=True,
             )
     except:
@@ -458,7 +458,7 @@ async def seasons_cb_handler(client: Client, query: CallbackQuery):
     )
     req = query.from_user.id
     offset = 0
-    btn.append([InlineKeyboardButton(text="↭ ʙᴀᴄᴋ ᴛᴏ ꜰɪʟᴇs ​↭", callback_data=f"next_{req}_{key}_{offset}")])
+    btn.append([InlineKeyboardButton(text="↭ Bᴀᴄᴋ Tᴏ Fɪʟᴇs ​↭", callback_data=f"next_{req}_{key}_{offset}")])
 
     await query.edit_message_reply_markup(InlineKeyboardMarkup(btn))
 
@@ -486,7 +486,7 @@ async def filter_seasons_cb_handler(client: Client, query: CallbackQuery):
     try:
         if int(req) not in [query.message.reply_to_message.from_user.id, 0]:
             return await query.answer(
-                f"⚠️ ʜᴇʟʟᴏ{query.from_user.first_name},\nᴛʜɪꜱ ɪꜱ ɴᴏᴛ ʏᴏᴜʀ ᴍᴏᴠɪᴇ ʀᴇQᴜᴇꜱᴛ,\nʀᴇQᴜᴇꜱᴛ ʏᴏᴜʀ'ꜱ...",
+                f"⚠️ Hᴇʟʟᴏ {query.from_user.first_name},\nᴛʜɪꜱ ɪꜱ ɴᴏᴛ ʏᴏᴜʀ ᴍᴏᴠɪᴇ ʀᴇᴏ̨ᴜᴇꜱᴛ,\nʀᴇᴏ̨ᴜᴇꜱᴛ ʏᴏᴜʀ'ꜱ...",
                 show_alert=True,
             )
     except:
@@ -546,14 +546,14 @@ async def filter_seasons_cb_handler(client: Client, query: CallbackQuery):
         ])
 
         btn.insert(0, [
-        InlineKeyboardButton("⚡ Gᴇᴛ Dɪʀᴇᴄᴛ Fɪʟᴇ ⚡", url=f"https://t.me/{temp.U_NAME}")
+        InlineKeyboardButton("⚡ Gᴇᴛ Dɪʀᴇᴄᴛ Fɪʟᴇ ⚡", url=f"https://t.me/LazyHUB/95")
         ])
         
     offset = 0
 
     btn.append([
             InlineKeyboardButton(
-                text="↭ ʙᴀᴄᴋ ᴛᴏ ꜰɪʟᴇs ​↭",
+                text="↭ Bᴀᴄᴋ Tᴏ Fɪʟᴇs ​↭",
                 callback_data=f"next_{req}_{key}_{offset}"
                 ),
     ])
@@ -1790,7 +1790,7 @@ async def auto_filter(client, msg, spoll=False):
         ])
 
         btn.insert(0, [
-        InlineKeyboardButton("⚡ Gᴇᴛ Dɪʀᴇᴄᴛ Fɪʟᴇ ⚡", url=f"https://t.me/{temp.U_NAME}")
+        InlineKeyboardButton("⚡ Gᴇᴛ Dɪʀᴇᴄᴛ Fɪʟᴇ ⚡", url=f"https://t.me/LazyHUB/95")
         ])
     else:
         btn = []
@@ -1800,7 +1800,7 @@ async def auto_filter(client, msg, spoll=False):
         ])
 
         btn.insert(0, [
-        InlineKeyboardButton("⚡ Gᴇᴛ Dɪʀᴇᴄᴛ Fɪʟᴇ ⚡", url=f"https://t.me/{temp.U_NAME}")
+        InlineKeyboardButton("⚡ Gᴇᴛ Dɪʀᴇᴄᴛ Fɪʟᴇ ⚡", url=f"https://t.me/LazyHUB/95")
         ])
     if offset != "":
         req = message.from_user.id if message.from_user else 0
