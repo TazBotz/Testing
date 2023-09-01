@@ -342,13 +342,13 @@ async def start(client, message):
         await asyncio.sleep(600)
         for x in filesarr:
             await x.delete()
-        await k.edit_text("<b>Your All Files/Videos is successfully deleted!!!</b>")
+        await k.edit_text("<b>ʏᴏᴜʀ ꜰɪʟᴇꜱ/ᴠɪᴅᴇᴏꜱ ɪꜱ ꜱᴜᴄᴄᴇꜱꜱꜰᴜʟʟʏ ᴅᴇʟᴇᴛᴇᴅ!!!</b>")
         return    
         
     elif data.startswith("files"):
         user = message.from_user.id
         if temp.SHORT.get(user)==None:
-            await message.reply_text(text="<b>Please Search Again in Group</b>")
+            await message.reply_text(text="<b>Pʟᴇᴀꜱᴇ Sᴇᴀʀᴄʜ Aɢᴀɪɴ ɪɴ Gʀᴏᴜᴘ</b>")
         else:
             chat_id = temp.SHORT.get(user)
         settings = await get_settings(chat_id)
