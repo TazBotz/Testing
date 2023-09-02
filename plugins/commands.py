@@ -470,27 +470,16 @@ async def start(client, message):
 
 @Client.on_message(filters.command('channel') & filters.user(ADMINS))
 async def channel_info(bot, message):
-           
-    """Send basic information of channel"""
-    if isinstance(CHANNELS, (int, str)):
-        channels = [CHANNELS]
-    elif isinstance(CHANNELS, list):
-        channels = CHANNELS
-    else:
-        raise ValueError("Unexpected type of CHANNELS")
-
+    if isinstance(CHANNELS, (int, str)): channels = [CHANNELS]
+    elif isinstance(CHANNELS, list): channels = CHANNELS
+    else: raise ValueError("Unexpected Type Of CHANNELS")
     text = '📑 **Indexed channels/groups**\n'
     for channel in channels:
         chat = await bot.get_chat(channel)
-        if chat.username:
-            text += '\n@' + chat.username
-        else:
-            text += '\n' + chat.title or chat.first_name
-
+        if chat.username: text += '\n@' + chat.username
+        else: text += '\n' + chat.title or chat.first_name
     text += f'\n\n**Total:** {len(CHANNELS)}'
-
-    if len(text) < 4096:
-        await message.reply(text)
+    if len(text) < 4096: await message.reply(text)
     else:
         file = 'Indexed channels.txt'
         with open(file, 'w') as f:
