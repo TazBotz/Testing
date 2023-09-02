@@ -312,13 +312,13 @@ Cᴏᴍᴍᴀɴᴅꜱ Aɴᴅ Uꜱᴇꜱ :
     
     RQSTFRMT = """Mᴏᴠɪᴇ Rᴇǫᴜᴇsᴛ Fᴏʀᴍᴀᴛ 
 
-➲ #request KGF
-➲ #request KGF 2022
+➲ /request Bholaa (2023)
+➲ #request Bholaa (2023)
 
 Sᴇʀɪᴇꜱ Rᴇǫᴜᴇsᴛ Fᴏʀᴍᴀᴛ 
 
-➲ #request Mirzapur
-➲ #request Mirzapur S03"""
+➲ #request Mirzapur S03
+➲ #request Mirzapur S03 E05"""
 
     EARN_MONEY_TXT = """
 <b>⍟───[Eᴀʀɴ Mᴏɴᴇʏ Fʀᴏᴍ Bᴏᴛ]───⍟
