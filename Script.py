@@ -310,15 +310,15 @@ Cᴏᴍᴍᴀɴᴅꜱ Aɴᴅ Uꜱᴇꜱ :
 • /connect - ᴄᴏɴɴᴇᴄᴛ ɢʀᴏᴜᴘ ᴛᴏ ʙᴏᴛ ᴘᴍ.
 • /settings - ᴄʜᴀɴɢᴇ sᴇᴛᴛɪɴɢs ᴀs ʏᴏᴜʀ ᴡɪsʜ.</b>"""
     
-    RQSTFRMT = """Mᴏᴠɪᴇ Rᴇǫᴜᴇsᴛ Fᴏʀᴍᴀᴛ 
+    RQSTFRMT = """𝙈𝙤𝙫𝙞𝙚 𝙍𝙚𝙦𝙪𝙚𝙨𝙩 𝙁𝙤𝙧𝙢𝙖𝙩 
 
-➲ /request Bholaa (2023)
-➲ #request Bholaa (2023)
+➨ /request Bholaa (2023)
+➨ #request Bholaa (2023)
 
-Sᴇʀɪᴇꜱ Rᴇǫᴜᴇsᴛ Fᴏʀᴍᴀᴛ 
+𝙎𝙚𝙧𝙞𝙚𝙨 𝙍𝙚𝙦𝙪𝙚𝙨𝙩 𝙁𝙤𝙧𝙢𝙖𝙩 
 
-➲ #request Mirzapur S03
-➲ #request Mirzapur S03 E05"""
+➨ #request Mirzapur S03
+➨ #request Mirzapur S03 E05"""
 
     EARN_MONEY_TXT = """
 <b>⍟───[Eᴀʀɴ Mᴏɴᴇʏ Fʀᴏᴍ Bᴏᴛ]───⍟
