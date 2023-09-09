@@ -1356,9 +1356,9 @@ async def cb_handler(client: Client, query: CallbackQuery):
     elif query.data == "morchl":
         buttons = [[
             InlineKeyboardButton('Bᴀᴄᴋᴜᴘ', url=CHNL_LNK),
-            InlineKeyboardButton('Mᴏᴠɪᴇs', url=f'https://telegram.me/+PzQ2AIfncVcwYjI1')
+            InlineKeyboardButton('Mᴏᴠɪᴇs', url=f'https://t.me/+PzQ2AIfncVcwYjI1')
         ],[
-            InlineKeyboardButton('Mᴏᴠɪᴇ Sᴇᴀʀᴄʜ Gʀᴏᴜᴘ', url=f'https://telegram.me/+AJCnlql9y4o4MjJl')
+            InlineKeyboardButton('Mᴏᴠɪᴇ Sᴇᴀʀᴄʜ Gʀᴏᴜᴘ', url=f'https://t.me/+MScgVINip140OWZl')
         ],[
             InlineKeyboardButton('🚪 Bᴀᴄᴋ', callback_data='start'),
             InlineKeyboardButton('🔐 Cʟᴏꜱᴇ', callback_data='close_data')
