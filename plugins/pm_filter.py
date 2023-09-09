@@ -129,8 +129,8 @@ async def next_page(bot, query):
         ]
 
         btn.insert(0, [
-            InlineKeyboardButton("Sᴇɴᴅ Aʟʟ", callback_data=f"sendfiles#{key}"),
             InlineKeyboardButton("Lᴀɴɢᴜᴀɢᴇ", callback_data=f"languages#{key}"),
+            InlineKeyboardButton("Sᴇɴᴅ Aʟʟ", callback_data=f"sendfiles#{key}"),
             InlineKeyboardButton("Dɪʀᴇᴄᴛ Fɪʟᴇ", url=f"https://t.me/LazyHUB/95") 
         ])
 
@@ -140,8 +140,8 @@ async def next_page(bot, query):
     else:
         btn = []
         btn.insert(0, [
-            InlineKeyboardButton("Sᴇɴᴅ Aʟʟ", callback_data=f"sendfiles#{key}"),
             InlineKeyboardButton("Lᴀɴɢᴜᴀɢᴇ", callback_data=f"languages#{key}"),
+            InlineKeyboardButton("Sᴇɴᴅ Aʟʟ", callback_data=f"sendfiles#{key}"),
             InlineKeyboardButton("Dɪʀᴇᴄᴛ Fɪʟᴇ", url=f"https://t.me/LazyHUB/95") 
         ])
 
@@ -359,8 +359,8 @@ async def filter_languages_cb_handler(client: Client, query: CallbackQuery):
             for file in files
         ]
         btn.insert(0, [
-            InlineKeyboardButton("Sᴇɴᴅ Aʟʟ", callback_data=f"sendfiles#{key}"),
             InlineKeyboardButton("Lᴀɴɢᴜᴀɢᴇ", callback_data=f"languages#{key}"),
+            InlineKeyboardButton("Sᴇɴᴅ Aʟʟ", callback_data=f"sendfiles#{key}"),
             InlineKeyboardButton("Dɪʀᴇᴄᴛ Fɪʟᴇ", url=f"https://t.me/LazyHUB/95") 
         ])
 
@@ -370,8 +370,8 @@ async def filter_languages_cb_handler(client: Client, query: CallbackQuery):
     else:
         btn = []
         btn.insert(0, [
-            InlineKeyboardButton("Sᴇɴᴅ Aʟʟ", callback_data=f"sendfiles#{key}"),
             InlineKeyboardButton("Lᴀɴɢᴜᴀɢᴇ", callback_data=f"languages#{key}"),
+            InlineKeyboardButton("Sᴇɴᴅ Aʟʟ", callback_data=f"sendfiles#{key}"),
             InlineKeyboardButton("Dɪʀᴇᴄᴛ Fɪʟᴇ", url=f"https://t.me/LazyHUB/95") 
         ])
 
@@ -539,15 +539,15 @@ async def filter_seasons_cb_handler(client: Client, query: CallbackQuery):
             for file in files
         ]
         btn.insert(0, [
-            InlineKeyboardButton("Sᴇɴᴅ Aʟʟ", callback_data=f"sendfiles#{key}"),
             InlineKeyboardButton("Lᴀɴɢᴜᴀɢᴇ", callback_data=f"languages#{key}"),
+            InlineKeyboardButton("Sᴇɴᴅ Aʟʟ", callback_data=f"sendfiles#{key}"),
             InlineKeyboardButton("Dɪʀᴇᴄᴛ Fɪʟᴇ", url=f"https://t.me/LazyHUB/95") 
         ])
     else:
         btn = []
         btn.insert(0, [
-            InlineKeyboardButton("Sᴇɴᴅ Aʟʟ", callback_data=f"sendfiles#{key}"),
             InlineKeyboardButton("Lᴀɴɢᴜᴀɢᴇ", callback_data=f"languages#{key}"),
+            InlineKeyboardButton("Sᴇɴᴅ Aʟʟ", callback_data=f"sendfiles#{key}"),
             InlineKeyboardButton("Dɪʀᴇᴄᴛ Fɪʟᴇ", url=f"https://t.me/LazyHUB/95") 
         ])
 
@@ -1791,8 +1791,8 @@ async def auto_filter(client, msg, spoll=False):
             for file in files
         ]
         btn.insert(0, [
-            InlineKeyboardButton("Sᴇɴᴅ Aʟʟ", callback_data=f"sendfiles#{key}"),
             InlineKeyboardButton("Lᴀɴɢᴜᴀɢᴇ", callback_data=f"languages#{key}"),
+            InlineKeyboardButton("Sᴇɴᴅ Aʟʟ", callback_data=f"sendfiles#{key}"),
             InlineKeyboardButton("Dɪʀᴇᴄᴛ Fɪʟᴇ", url=f"https://t.me/LazyHUB/95") 
         ])
 
@@ -1802,8 +1802,8 @@ async def auto_filter(client, msg, spoll=False):
     else:
         btn = []
         btn.insert(0, [
-            InlineKeyboardButton("Sᴇɴᴅ Aʟʟ", callback_data=f"sendfiles#{key}"),
             InlineKeyboardButton("Lᴀɴɢᴜᴀɢᴇ", callback_data=f"languages#{key}"),
+            InlineKeyboardButton("Sᴇɴᴅ Aʟʟ", callback_data=f"sendfiles#{key}"),
             InlineKeyboardButton("Dɪʀᴇᴄᴛ Fɪʟᴇ", url=f"https://t.me/LazyHUB/95") 
         ])
 
