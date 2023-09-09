@@ -81,7 +81,7 @@ async def pm_text(bot, message):
     await message.reply_text(
          text=f"<b>Hᴇʏ {user} 😍 ,\n\nYᴏᴜ Cᴀɴ'ᴛ Gᴇᴛ Mᴏᴠɪᴇ Fʀᴏᴍ Hᴇʀᴇ\nSᴇᴀʀᴄʜ ᴏɴ Oᴜʀ <a href=https://t.me/+MScgVINip140OWZl>Mᴏᴠɪᴇ Gʀᴏᴜᴘ​</a> ᴏʀ\nCʟɪᴄᴋ ᴏɴ Bᴇʟᴏᴡ Bᴜᴛᴛᴏɴ👇</b>",
          disable_web_page_preview=True,
-         reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("🧑🏻‍💻 Sᴜᴘᴘᴏʀᴛ Gʀᴏᴜᴘ 🧑🏻‍💻", url="https://t.me/+7joy3I3RJt02YmY9")]])
+         reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("🎞 Lᴀᴢʏ Mᴏᴠɪᴇꜱ Gʀᴏᴜᴘ 🎞", url="https://t.me/+MScgVINip140OWZl")],[InlineKeyboardButton("🧑🏻‍💻 Bᴏᴛ Sᴜᴘᴘᴏʀᴛ Gʀᴏᴜᴘ 🧑🏻‍💻", url="https://t.me/+7joy3I3RJt02YmY9")]])
     )
     await bot.send_message(
         chat_id=LOG_CHANNEL,
