@@ -135,7 +135,7 @@ async def next_page(bot, query):
         ])
 
         btn.insert(0, [
-        InlineKeyboardButton("💢 Aᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ Gʀᴏᴜᴘ 💢", url=f"http://t.me/IMDb_File_Bot?startgroup=true")
+        InlineKeyboardButton("➕ Aᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ Gʀᴏᴜᴘ ➕", url=f"http://t.me/IMDb_File_Bot?startgroup=true")
         ])
     else:
         btn = []
@@ -146,7 +146,7 @@ async def next_page(bot, query):
         ])
 
         btn.insert(0, [
-        InlineKeyboardButton("💢 Aᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ Gʀᴏᴜᴘ 💢", url=f"http://t.me/IMDb_File_Bot?startgroup=true")
+        InlineKeyboardButton("➕ Aᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ Gʀᴏᴜᴘ ➕", url=f"http://t.me/IMDb_File_Bot?startgroup=true")
         ])
     try:
         if settings['max_btn']:
@@ -365,7 +365,7 @@ async def filter_languages_cb_handler(client: Client, query: CallbackQuery):
         ])
 
         btn.insert(0, [
-        InlineKeyboardButton("💢 Aᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ Gʀᴏᴜᴘ 💢", url=f"http://t.me/IMDb_File_Bot?startgroup=true")
+        InlineKeyboardButton("➕ Aᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ Gʀᴏᴜᴘ ➕", url=f"http://t.me/IMDb_File_Bot?startgroup=true")
         ])
     else:
         btn = []
@@ -376,7 +376,7 @@ async def filter_languages_cb_handler(client: Client, query: CallbackQuery):
         ])
 
         btn.insert(0, [
-        InlineKeyboardButton("💢 Aᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ Gʀᴏᴜᴘ 💢", url=f"http://t.me/IMDb_File_Bot?startgroup=true")
+        InlineKeyboardButton("➕ Aᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ Gʀᴏᴜᴘ ➕", url=f"http://t.me/IMDb_File_Bot?startgroup=true")
         ])
     if offset != "":
         try:
@@ -552,7 +552,7 @@ async def filter_seasons_cb_handler(client: Client, query: CallbackQuery):
         ])
 
         btn.insert(0, [
-        InlineKeyboardButton("💢 Aᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ Gʀᴏᴜᴘ 💢", url=f"http://t.me/IMDb_File_Bot?startgroup=true")
+        InlineKeyboardButton("➕ Aᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ Gʀᴏᴜᴘ ➕", url=f"http://t.me/IMDb_File_Bot?startgroup=true")
         ])
         
     offset = 0
@@ -1799,7 +1799,7 @@ async def auto_filter(client, msg, spoll=False):
         ])
 
         btn.insert(0, [
-        InlineKeyboardButton("💢 Aᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ Gʀᴏᴜᴘ 💢", url=f"http://t.me/IMDb_File_Bot?startgroup=true")
+        InlineKeyboardButton("➕ Aᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ Gʀᴏᴜᴘ ➕", url=f"http://t.me/IMDb_File_Bot?startgroup=true")
         ])
     else:
         btn = []
@@ -1810,7 +1810,7 @@ async def auto_filter(client, msg, spoll=False):
         ])
 
         btn.insert(0, [
-        InlineKeyboardButton("💢 Aᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ Gʀᴏᴜᴘ 💢", url=f"http://t.me/IMDb_File_Bot?startgroup=true")
+        InlineKeyboardButton("➕ Aᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ Gʀᴏᴜᴘ ➕", url=f"http://t.me/IMDb_File_Bot?startgroup=true")
         ])
     if offset != "":
         req = message.from_user.id if message.from_user else 0
