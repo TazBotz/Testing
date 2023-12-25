@@ -2090,7 +2090,7 @@ async def auto_filter(client, msg, spoll=False):
         await m.delete()
         try:
             if settings['auto_delete']:
-                await asyncio.sleep(10) #baad me change Kar dena
+                await asyncio.sleep(300) #baad me change Kar dena
                 await fuk.delete()
                 await message.delete()
                 buttons = [[
@@ -2099,10 +2099,8 @@ async def auto_filter(client, msg, spoll=False):
                 reply_markup=InlineKeyboardMarkup(buttons)
                 await message.reply_photo(
                     photo="https://telegra.ph/file/bf6d8d3f4d60cb803c617.jpg",
-                    caption=f"**Hey, {message.from_user.id}, Your filter for {search} is deleted", 
-                    disable_web_page_preview=True,
-                    reply_markup=reply_markup,
-                    reply_to_message_id=message.id
+                    caption=f"**Hey, {message.from_user.id}, Your filter for {search} is deleted",
+                    reply_markup=reply_markup
                 )
                 
         except KeyError:
