@@ -2095,7 +2095,12 @@ async def auto_filter(client, msg, spoll=False):
                     InlineKeyboardButton("Updates", url="https://google.com")
                 ]]
                 reply_markup=InlineKeyboardMarkup(buttons)
-                await fuk.edit_photo("Hey, {message.from_user.id} Your filter for {search} is deleted", disable_web_page_preview=True, reply_markup=reply_markup)
+                await fuk.edit_photo(
+                    photo="https://telegra.ph/file/bf6d8d3f4d60cb803c617.jpg",
+                    caption=f"**Hey, {message.from_user.id}, Your filter for {search} is deleted", 
+                    disable_web_page_preview=True,
+                    reply_markup=reply_markup
+                )
                 await message.delete()
         except KeyError:
             await save_group_settings(message.chat.id, 'auto_delete', True)
