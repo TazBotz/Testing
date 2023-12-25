@@ -2091,7 +2091,7 @@ async def auto_filter(client, msg, spoll=False):
         try:
             if settings['auto_delete']:
                 await asyncio.sleep(300)
-                buttons [[
+                buttons = [[
                     InlineKeyboardButton("Updates", url="https://google.com")
                 ]]
                 reply_markup=InlineKeyboardMarkup(buttons)
