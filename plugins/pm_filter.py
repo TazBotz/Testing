@@ -2090,18 +2090,21 @@ async def auto_filter(client, msg, spoll=False):
         await m.delete()
         try:
             if settings['auto_delete']:
-                await asyncio.sleep(300)
+                await asyncio.sleep(10) #baad me change Kar dena
+                await fuk.delete()
+                await message.delete()
                 buttons = [[
                     InlineKeyboardButton("Updates", url="https://google.com")
                 ]]
                 reply_markup=InlineKeyboardMarkup(buttons)
-                await fuk.edit_photo(
+                await message.reply_photo(
                     photo="https://telegra.ph/file/bf6d8d3f4d60cb803c617.jpg",
                     caption=f"**Hey, {message.from_user.id}, Your filter for {search} is deleted", 
                     disable_web_page_preview=True,
-                    reply_markup=reply_markup
+                    reply_markup=reply_markup,
+                    reply_to_message_id=message.id
                 )
-                await message.delete()
+                
         except KeyError:
             await save_group_settings(message.chat.id, 'auto_delete', True)
             await asyncio.sleep(300)
